@@ -14,10 +14,12 @@ function checkPassword() {
     xhttp.open("GET", "passwords.txt", true);
     xhttp.send();
 }
-const {PythonShell} = require('javascript-shell');
-const path = require('path');
-
-PythonShell.run(path.join(__dirname, 'filename.py'), null, function (err) {
-  if (err) throw err;
-  console.log('Function executed successfully!');
-});
+if (password === "") {
+    errorMessage.innerText = "Пожалуйста, введите пароль";
+    return false;
+  } else {
+    errorMessage.innerText = "";
+    // здесь можно добавить код для проверки пароля
+    // и переадресации пользователя на другую страницу
+  }
+}
