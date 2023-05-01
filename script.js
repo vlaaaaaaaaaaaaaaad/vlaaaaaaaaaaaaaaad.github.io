@@ -10,7 +10,7 @@ function checkPassword() {
             if (this.readyState == 4 && this.status == 200) {
                 var passwords = this.responseText.split("\n");
                 if (passwords.includes(password)) {
-                    window.location.href = "https://gpt-4-chat-ui.vladantonienko.repl.co/";
+                    window.location.href = "https://massagekryvyjrih.wixsite.com/my-site-4";
                 } else {
                     errorMessage.innerText = "Неверный пароль, попробуйте еще раз!";
                 }
